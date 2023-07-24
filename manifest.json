@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Goolel Map For ESC Extension",
+  "version": "1.0.0.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*","*://*.google.co.th/*"],
+      "js": [
+        "jq36.js",
+        "modal.js",
+        
+        "axios.js",
+        "esc-extension.js",
+        "sweetalert2.min.js"
+      ],
+      "css": [
+        "esc-extension.css",
+      
+        "sweetalert2.min.css",
+        "snackbar.css",
+        "modal.css"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "h128.png"
+  }
+}
